@@ -38,6 +38,14 @@
                 key-positions = <18 19>;
                 bindings = <&kp COLON>;
             };
+            combo_lparen {
+                key-positions = <11 12>;
+                bindings = <&kp LPAR>;
+            }
+            combo_rparen {
+                key-positions = <9 10>;
+                bindings = <&kp RPAR>;
+            }
         };
 
         keymap {
@@ -49,7 +57,7 @@
 &kp Q &kp W &kp F &kp P &kp B 		&kp J &kp L &kp U &kp Y &kp BSPC 
 &hm LCTRL A &hm LALT R &hm LSHIFT S &hm LGUI T &kp G 		&kp M &hm RGUI N &hm RSHIFT E &hm RALT I &hm RCTRL O
 &kp Z &kp X &kp C &kp D &kp V	    &kp K &kp H &kp QMARK &kp COMMA &kp DOT
- 		     &kp TAB &lt NAVI RET       &lt NUM SPACE &lt SYM BSPC 
+ 		     &kp SYM TAB &lt NUM RET       &lt NAVI SPACE &lt BSPC 
 
 		        >;
 		    };
@@ -57,7 +65,7 @@
             nav_layer {
                 bindings = <
 &kp XXX &kp XXX &kp XXX &kp XXX &kp XXX     &kp XXX &kp PG_DN &kp PG_UP &kp XXX &kp XXX
-&kp ___ &kp ___ &kp ___ &kp ___ &kp XXX     &kp LEFT &kp DOWN &kp UP &kp RIGHT &kp XXX
+&h LCTRL &hm LALT &hm LSHIFT &hm LGUI &kp XXX     &kp LEFT &kp DOWN &kp UP &kp RIGHT &kp XXX
 &kp XXX &kp XXX &kp XXX &kp XXX &kp XXX     &kp XXX &kp XXX &kp XXX &kp XXX &kp XXX
                 &kp XXX &kp XXX          &kp HOME &kp END
 
