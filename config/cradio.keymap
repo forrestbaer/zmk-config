@@ -57,7 +57,7 @@
 &kp Q &kp W &kp F &kp P &kp B 		&kp J &kp L &kp U &kp Y &kp BSPC 
 &hm LCTRL A &hm LALT R &hm LSHIFT S &hm LGUI T &kp G 		&kp M &hm RGUI N &hm RSHIFT E &hm RALT I &hm RCTRL O
 &kp Z &kp X &kp C &kp D &kp V	    &kp K &kp H &kp QMARK &kp COMMA &kp DOT
- 		     &lt 3 TAB &lt 2 RET       &lt 1 SPACE &kp BSPC 
+&lt 3 TAB &lt 2 RET &lt 1 SPACE &kp BSPC
 
 		        >;
 		    };
@@ -65,7 +65,7 @@
             nav_layer {
                 bindings = <
 &kp XXX &kp XXX &kp XXX &kp XXX &kp XXX     &kp XXX &kp PG_DN &kp PG_UP &kp XXX &kp XXX
-&h LCTRL &hm LALT &hm LSHIFT &hm LGUI &kp XXX     &kp LEFT &kp DOWN &kp UP &kp RIGHT &kp XXX
+&hm LCTRL &hm LALT &hm LSHIFT &hm LGUI &kp XXX     &kp LEFT &kp DOWN &kp UP &kp RIGHT &kp XXX
 &kp XXX &kp XXX &kp XXX &kp XXX &kp XXX     &kp XXX &kp XXX &kp XXX &kp XXX &kp XXX
                 &kp XXX &kp XXX          &kp HOME &kp END
 
