@@ -36,14 +36,6 @@
                 key-positions = <0 1 2 3>;
                 bindings = <&bt BT_CLR>;
             };
-            combo_lparen {
-                key-positions = <10 11>;
-                bindings = <&kp LPAR>;
-            };
-            combo_rparen {
-                key-positions = <12 13>;
-                bindings = <&kp RPAR>;
-            };
             combo_lbkt {
                 key-positions = <5 6>;
                 bindings = <&kp LBKT>;
@@ -100,10 +92,22 @@
                 key-positions = <26 27>;
                 bindings = <&kp GT>;
             };
+            combo_lshift {
+                key-positions = <20 21>;
+                bindings = <&lt LSHIFT XXX>;
+            };
+            combo_rshift {
+                key-positions = <28 29>;
+                bindings = <&lt RSHIFT XXX>;
+            };
+            combo_ctrl {
+                key-positions = <31 32>;
+                bindings = <&lt LCTRL XXX>
+            };
         };
 
         // select to beginning, select to end
-        // alt,ctrl not mapped
+        // alt not mapped
 
         keymap {
                 compatible = "zmk,keymap";
@@ -119,9 +123,9 @@
 
             nav_layer {
                 bindings = <
-&kp XXX &kp XXX &kp XXX &kp C_VOL_UP &kp XXX     &kp XXX &kp PG_DN &kp PG_UP &kp XXX &kp DEL
-&kp C_PREV &kp C_PP &kp C_NEXT &kp K_MUTE &kp XXX     &kp LEFT &kp DOWN &kp UP &kp RIGHT &kp XXX
-&kp XXX &kp XXX &kp XXX &kp C_VOL_DN &kp XXX     &kp XXX &kp XXX &kp XXX &kp XXX &kp XXX
+&kp XXX &kp XXX &kp XXX &kp C_VOL_UP &kp XXX     &kp XXX &kp XXX &kp PG_DN &kp PG_UP &kp DEL
+&kp C_PREV &kp C_PP &kp C_NEXT &kp K_MUTE &kp XXX     &kp XXX &kp LEFT &kp DOWN &kp UP &kp RIGHT
+&kp LS(HOME) &kp LS(END) &kp XXX &kp C_VOL_DN &kp XXX     &kp XXX &kp XXX &kp XXX &kp XXX &kp XXX
                 &kp XXX &kp XXX          &kp HOME &kp END
                 >;
             };
