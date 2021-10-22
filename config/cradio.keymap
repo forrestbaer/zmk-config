@@ -29,6 +29,10 @@
         combos {
             compatible = "zmk,combos";
             
+            combo_esc {
+                key-positions = <0 1>;
+                bindings = <&kp ESC>;
+            };
             combo_bt_clr {
                 key-positions = <0 1 2 3>;
                 bindings = <&bt BT_CLR>;
@@ -55,7 +59,7 @@
 &kp Q &kp W &kp F &kp P &kp B 		&kp J &kp L &kp U &kp Y &kp BSPC 
 &hm LCTRL A &hm LALT R &hm LSHIFT S &hm LGUI T &kp G 		&kp M &hm RGUI N &hm RSHIFT E &hm RALT I &hm RCTRL O
 &kp Z &kp X &kp C &kp D &kp V	    &kp K &kp H &kp QMARK &kp COMMA &kp DOT
-               &lt SYML TAB &lt NUML RET        &lt NAVL SPACE &kp BSPC
+               &lt NAVL TAB &lt NUML RET        &lt SYML SPACE &kp BSPC
 		        >;
 		    };
 
