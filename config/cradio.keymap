@@ -21,7 +21,7 @@
     };
 
     combos {
-        #include combos.dtsi;
+        #include "combos.dtsi";
     };
 
     // alt not mapped
