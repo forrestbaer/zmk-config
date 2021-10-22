@@ -41,11 +41,11 @@
             combo_lparen {
                 key-positions = <11 12>;
                 bindings = <&kp LPAR>;
-            }
+            };
             combo_rparen {
                 key-positions = <9 10>;
                 bindings = <&kp RPAR>;
-            }
+            };
         };
 
         keymap {
