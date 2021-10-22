@@ -5,7 +5,6 @@
 #define BASE 0
 #define NAVL 1
 #define NUML 2
-#define SYML 3
 #define XXX &none
 #define ___ &trans
 
@@ -49,7 +48,66 @@
                 key-positions = <12 13>;
                 bindings = <&kp RPAR>;
             };
+            combo_lbkt {
+                key-positions = <5 6>;
+                bindings = <&kp LBKT>
+            };
+            combo_rbkt {
+                key-positions = <6 7>;
+                bindings = <&kp RBKT>
+            };
+            combo_lbrc {
+                key-positions = <7 8>;
+                bindings = <&kp LBRC>
+            };
+            combo_rbrc {
+                key-positions = <8 9>;
+                bindings = <&kp RBRC>
+            };
+            combo_pipe {
+                key-positions = <7 8 9>;
+                bindings = <&kp PIPE>;
+            };
+            combo_tab {
+                key-positions = <10 11>;
+                bindings = <&kp TAB>;
+            };
+            combo_colon {
+                key-positions = <12 13>;
+                bindings = <&kp COLON>;
+            };
+            combo_semi {
+                key-positions = <13 14>;
+                bindings = <&kp SEMI>;
+            };
+            combo_lpar {
+                key-positions = <15 16>;
+                bindings = <&kp LPAR>;
+            };
+            combo_rpar {
+                key-positions = <16 17>;
+                bindings = <&kp RPAR>;
+            };
+            combo_dqt {
+                key-positions = <17 18>;
+                bindings = <&kp DQT>;
+            };
+            combo_sqt {
+                key-positions = <18 19>;
+                bindings = <&kp SQT>;
+            };
+            combo_lt {
+                key-positions = <25 26>;
+                bindings = <&kp LT>;
+            };
+            combo_gt {
+                key-positions = <26 27>;
+                bindings = <&kp GT>;
+            };
         };
+
+        // select to beginning, select to end
+        // alt,ctrl not mapped
 
         keymap {
                 compatible = "zmk,keymap";
@@ -57,17 +115,17 @@
        		default_layer {
         		bindings = <
 &kp Q &kp W &kp F &kp P &kp B 		&kp J &kp L &kp U &kp Y &kp BSPC 
-&hm LCTRL A &hm LALT R &hm LSHIFT S &hm LGUI T &kp G 		&kp M &hm RGUI N &hm RSHIFT E &hm RALT I &hm RCTRL O
+&kp A &kp R &kp S &kp T &kp G 		&kp M &kp N &kp E &kp I &kp O
 &kp Z &kp X &kp C &kp D &kp V	    &kp K &kp H &kp QMARK &kp COMMA &kp DOT
-               &lt NAVL TAB &lt NUML RET        &lt SYML SPACE &kp BSPC
+               &lt NUML RET &lt NAVL XXX        &hm RGUI XXX &lt RSHIFT SPACE 
 		        >;
 		    };
 
             nav_layer {
                 bindings = <
-&kp XXX &kp XXX &kp XXX &kp XXX &kp XXX     &kp XXX &kp PG_DN &kp PG_UP &kp XXX &kp XXX
-&hm LCTRL C_PREV &hm LALT C_PP &hm LSHIFT C_NEXT &hm LGUI K_MUTE &kp XXX     &kp LEFT &kp DOWN &kp UP &kp RIGHT &kp XXX
-&kp XXX &kp XXX &kp XXX &kp XXX &kp XXX     &kp XXX &kp XXX &kp XXX &kp XXX &kp XXX
+&kp XXX &kp XXX &kp XXX &kp C_VOL_UP &kp XXX     &kp XXX &kp PG_DN &kp PG_UP &kp XXX &kp DEL
+&kp C_PREV &kp C_PP &kp C_NEXT &kp K_MUTE &kp XXX     &kp LEFT &kp DOWN &kp UP &kp RIGHT &kp XXX
+&kp XXX &kp XXX &kp XXX &kp C_VOL_DN &kp XXX     &kp XXX &kp XXX &kp XXX &kp XXX &kp XXX
                 &kp XXX &kp XXX          &kp HOME &kp END
                 >;
             };
@@ -78,15 +136,6 @@
 &kp F8 &kp F7 &kp F6 &kp F5 &kp XXX     &kp PLUS &kp N4 &kp N5 &kp N6 &kp STAR 
 &kp F12 &kp F11 &kp F10 &kp F9 &kp XXX     &kp MINUS &kp N1 &kp N2 &kp N3 &kp CARET
                 &kp XXX &kp XXX          &kp N0 &kp DOT
-                >;
-            };
-
-            sym_layer {
-                bindings = <
-&kp TILDE &kp GRAVE &kp LBKT &kp RBKT &kp CARET     &kp EXCL &kp AT &kp HASH &kp DOLLAR &kp DQT
-&kp LT &kp GT &kp LPAR &kp RPAR &kp AMPS     &kp PLUS &kp SLASH &kp BSLH &kp COLON &kp SQT
-&kp XXX &kp XXX &kp LBRC &kp RBRC &kp PIPE     &kp MINUS &kp UNDER &kp EQUAL &kp PERCENT &kp STAR
-                &kp XXX &kp XXX          &kp HOME &kp END
                 >;
             };
             
