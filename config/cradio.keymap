@@ -102,7 +102,7 @@
             };
             combo_ctrl {
                 key-positions = <31 32>;
-                bindings = <&lt LCTRL XXX>
+                bindings = <&lt LCTRL XXX>;
             };
         };
 
@@ -125,7 +125,7 @@
                 bindings = <
 &kp XXX &kp XXX &kp XXX &kp C_VOL_UP &kp XXX     &kp XXX &kp XXX &kp PG_DN &kp PG_UP &kp DEL
 &kp C_PREV &kp C_PP &kp C_NEXT &kp K_MUTE &kp XXX     &kp XXX &kp LEFT &kp DOWN &kp UP &kp RIGHT
-&kp LS(HOME) &kp LS(END) &kp XXX &kp C_VOL_DN &kp XXX     &kp XXX &kp XXX &kp XXX &kp XXX &kp XXX
+&kp XXX &kp XXX &kp XXX &kp C_VOL_DN &kp XXX     &kp RS(HOME) &kp RS(END) &kp XXX &kp XXX &kp XXX
                 &kp XXX &kp XXX          &kp HOME &kp END
                 >;
             };
