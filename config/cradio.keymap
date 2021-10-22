@@ -36,10 +36,6 @@
                 key-positions = <0 1 2 3>;
                 bindings = <&bt BT_CLR>;
             };
-            combo_colon {
-                key-positions = <18 19>;
-                bindings = <&kp COLON>;
-            };
             combo_lparen {
                 key-positions = <10 11>;
                 bindings = <&kp LPAR>;
