@@ -48,14 +48,13 @@
 		    };
 
             nav_layer {
+                bindings = <
 &kp XXX &kp XXX &kp XXX &kp XXX &kp XXX     &kp XXX &kp PG_DN &kp PG_UP &kp XXX &kp XXX
 &kp XXX &kp XXX &kp XXX &kp XXX &kp XXX     &kp XXX &kp LEFT &kp DOWN &kp UP &kp RIGHT 
 &kp XXX &kp XXX &kp XXX &kp XXX &kp XXX     &kp XXX &kp HOME &kp END &kp XXX &kp XXX
                 &kp XXX &kp XXX          &kp XXX &kp XXX
 
-            };
-
-            sym_layer {
+                >;
             };
         };
 };
