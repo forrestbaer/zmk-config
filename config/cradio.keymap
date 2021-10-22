@@ -1,9 +1,15 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
+#
+
+#define BASE 0
+#define NAVI 1
+#define SYM 2
+#define XXX &none
 
 &mt {
-    tapping-term-ms = <500>;
+    tapping-term-ms = <300>;
 };
 
 / { 
@@ -11,8 +17,7 @@
             hm: homerow_mods {
                 compatible = "zmk,behavior-hold-tap";
                 label = "HOMEROW_MODS";
-                #binding-cells = <2>;
-                tapping-term-ms = <500>;
+                tapping-term-ms = <400>;
                 quick_tap_ms = <0>;
                 flavor = "tap-preferred";
                 bindings = <&kp>, <&kp>;
@@ -32,12 +37,25 @@
                 compatible = "zmk,keymap";
                 
        		default_layer {
-		bindings = <
-		&kp Q &kp W &kp F &kp P &kp B 		&kp J &kp L &kp U &kp Y &kp BSPC 
-		&hm LCTRL A &hm LALT R &hm LSHIFT S &hm LGUI T &kp G 		&kp M &hm RGUI N &hm RSHIFT E &hm RALT I &hm RCTRL O
-		&kp Z &kp X &kp C &kp D &kp V	    &kp K &kp H &kp QMARK &kp COMMA &kp DOT
-        		     &kp TAB &kp RET       &kp SPACE &kp BSPC 
-		>;
+        		bindings = <
+
+&kp Q &kp W &kp F &kp P &kp B 		&kp J &kp L &kp U &kp Y &kp BSPC 
+&hm LCTRL A &hm LALT R &hm LSHIFT S &hm LGUI T &kp G 		&kp M &hm RGUI N &hm RSHIFT E &hm RALT I &hm RCTRL O
+&kp Z &kp X &kp C &kp D &kp V	    &kp K &kp H &kp QMARK &kp COMMA &kp DOT
+ 		     &kp TAB &mt NAVI RET       &kp SPACE &kp BSPC 
+
+		        >;
 		    };
+
+            nav_layer {
+&kp XXX &kp XXX &kp XXX &kp XXX &kp XXX     &kp XXX &kp PG_DN &kp PG_UP &kp XXX &kp XXX
+&kp XXX &kp XXX &kp XXX &kp XXX &kp XXX     &kp XXX &kp LEFT &kp DOWN &kp UP &kp RIGHT 
+&kp XXX &kp XXX &kp XXX &kp XXX &kp XXX     &kp XXX &kp HOME &kp END &kp XXX &kp XXX
+                &kp XXX &kp &trans          &kp XXX &kp XXX
+
+            };
+
+            sym_layer {
+            };
         };
 };
