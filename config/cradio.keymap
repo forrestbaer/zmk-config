@@ -1,12 +1,11 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
-#
 
 #define BASE 0
-#define NAVI 1
-#define NUM 2
-#define SYM 3
+#define NAVL 1
+#define NUML 2
+#define SYML 3
 #define XXX &none
 #define ___ &trans
 
@@ -53,12 +52,10 @@
                 
        		default_layer {
         		bindings = <
-
 &kp Q &kp W &kp F &kp P &kp B 		&kp J &kp L &kp U &kp Y &kp BSPC 
 &hm LCTRL A &hm LALT R &hm LSHIFT S &hm LGUI T &kp G 		&kp M &hm RGUI N &hm RSHIFT E &hm RALT I &hm RCTRL O
 &kp Z &kp X &kp C &kp D &kp V	    &kp K &kp H &kp QMARK &kp COMMA &kp DOT
-&lt 3 TAB &lt 2 RET &lt 1 SPACE &kp BSPC
-
+               &lt SYML TAB &lt NUML RET        &lt NAVL SPACE &kp BSPC
 		        >;
 		    };
 
@@ -68,7 +65,6 @@
 &hm LCTRL &hm LALT &hm LSHIFT &hm LGUI &kp XXX     &kp LEFT &kp DOWN &kp UP &kp RIGHT &kp XXX
 &kp XXX &kp XXX &kp XXX &kp XXX &kp XXX     &kp XXX &kp XXX &kp XXX &kp XXX &kp XXX
                 &kp XXX &kp XXX          &kp HOME &kp END
-
                 >;
             };
             
@@ -78,7 +74,6 @@
 &kp F8 &kp F7 &kp F6 &kp F5 &kp XXX     &kp STAR &kp N4 &kp N5 &kp N6 &kp PLUS
 &kp F12 &kp F11 &kp F10 &kp F9 &kp XXX     &kp XXX &kp N1 &kp N2 &kp N3 &kp XXX
                 &kp XXX &kp XXX          &kp N0 &kp DOT
-
                 >;
             };
 
@@ -88,7 +83,6 @@
 &kp LT &kp GT &kp LPAR &kp RPAR &kp AMPS     &kp PLUS &kp SLASH &kp BSLH &kp COLON &kp SQT
 &kp XXX &kp XXX &kp LBRC &kp RBRC &kp PIPE     &kp MINUS &kp UNDER &kp EQUAL &kp PERCENT &kp STAR
                 &kp XXX &kp XXX          &kp HOME &kp END
-
                 >;
             };
             
