@@ -1,5 +1,9 @@
-#define XXX &none
+#define XXX &trans
 #define ___ &trans
 #define iHOMsel RG(RS(LEFT))
 #define iENDsel RG(RS(RIGHT))
 #define selALL RG(A)
+#define mtRight RG(TAB)
+#define mtLeft RG(SH(TAB))
+#define ctRight LC(TAB)
+#define ctLeft (LC(SH(TAB)))
