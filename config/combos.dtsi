@@ -17,7 +17,7 @@ compatible = "zmk,combos";
   };
 
 COMBO(esc, &kp ESC, 0 1)
-COMBO(underscore, &kp UNDER 1 2)
+COMBO(underscore, &kp UNDER, 1 2)
 COMBO(dash, &kp MINUS, 2 3)
 COMBO(equals, &kp EQUAL, 3 4)
 COMBO(left_shift, &skq LSHIFT, 20 21)
