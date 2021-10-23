@@ -4,6 +4,6 @@
 #define iENDsel RG(RS(RIGHT))
 #define selALL RG(A)
 #define mtRight RG(TAB)
-#define mtLeft RG(SH(TAB))
+#define mtLeft RG(RS(TAB))
 #define ctRight LC(TAB)
-#define ctLeft LC(SH(TAB))
+#define ctLeft LC(RS(TAB))
