@@ -6,4 +6,4 @@
 #define mtRight RG(TAB)
 #define mtLeft RG(SH(TAB))
 #define ctRight LC(TAB)
-#define ctLeft (LC(SH(TAB)))
+#define ctLeft LC(SH(TAB))
