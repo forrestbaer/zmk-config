@@ -56,13 +56,13 @@
         nav_layer {
             bindings = <
             // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-                 &kp RG(TAB)   &kp RG(Z)     &kp RG(RS(Z)) &kp C_VOL_UP  &kp RG(X)         &kp ctLeft    &kp ctRight   &kp PG_DN     &kp PG_UP     &kp DEL
+                 &kp RG(TAB)   &kp XXX       &kp XXX       &kp C_VOL_UP  &kp RG(X)         &kp ctLeft    &kp ctRight   &kp PG_DN     &kp PG_UP     &kp DEL
             // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
                  &kp C_PREV    &kp C_PP      &kp C_NEXT    &kp K_MUTE    &kp RG(C)         &kp XXX       &kp LEFT      &kp DOWN      &kp UP        &kp RIGHT
             // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-                 &kp XXX       &kp XXX       &kp CAPS      &kp C_VOL_DN  &kp RG(V)         &kp iHOMsel   &kp iENDsel   &kp XXX       &kp XXX       &kp selAll 
+                 &kp RG(Z)     &kp RG(RS(Z)) &kp CAPS      &kp C_VOL_DN  &kp RG(V)         &kp iHOMsel   &kp iENDsel   &kp RG(DOWN)  &kp RG(UP)    &kp selAll 
             // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
-                                                           &kp XXX       &kp XXX           &kp RG(LEFT)  &kp RG(RIGHT)
+                                                           &kp XXX       &kp LALT          &kp RG(LEFT)  &kp RG(RIGHT)
             //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
             >;
         };
