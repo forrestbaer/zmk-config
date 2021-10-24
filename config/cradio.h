@@ -2,7 +2,7 @@
 #define ___ &trans
 #define iHOMsel RG(RS(LEFT))
 #define iENDsel RG(RS(RIGHT))
-#define selALL RG(A)
+#define selAll RG(A)
 #define mtRight RG(TAB)
 #define mtLeft RG(RS(TAB))
 #define ctRight LC(TAB)
