@@ -26,6 +26,15 @@
             release-after-ms = <2000>;
             quick-release;
         };
+        lst: layer_sticky_tap {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LAYER_STICKY_TAP";
+            #binding-cells = <2>;
+            tapping-term-ms = <175>;
+            quick_tap_ms = <0>;
+            flavor = "tap_preferred";
+            bindings = <&mo>, <&sk>;
+        };
     };
 
     combos {
@@ -44,7 +53,7 @@
             // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
                  &kp Z         &kp X         &kp C         &kp D         &kp V	           &kp K         &kp H         &kp COMMA     &kp DOT       &hm SLASH QMARK 
             // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
-                                                           &lt 1 &skq LGUI  &lt 2 RET      &kp SPACE     &kp RGUI 
+                                                           &lst 1 LGUI   &lt 2 RET      &kp SPACE     &kp RGUI 
             //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
 		    >;
         };
