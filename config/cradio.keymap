@@ -21,7 +21,7 @@
         hms: hold_mods_sticky {
             compatible = "zmk,behavior-hold-tap";
             label = "HOLD_TAP_STICKY";
-            #binding-cells = <2>;
+            #binding-cells = <1>;
             tapping-term-ms = <300>;
             quick_tap_ms = <0>;
             flavor = "tap-preferred";
