@@ -18,15 +18,6 @@
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
-        hms: hold_mods_sticky {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HOLD_TAP_STICKY";
-            #binding-cells = <1>;
-            tapping-term-ms = <300>;
-            quick_tap_ms = <0>;
-            flavor = "tap-preferred";
-            bindings = <&kp>, <&skq>;
-        };
         skq: sticky_key_quick_release {
             compatible = "zmk,behavior-sticky-key";
             label = "STICKY_KEY_QUICK_RELEASE";
@@ -53,7 +44,7 @@
             // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
                  &kp Z         &kp X         &kp C         &kp D         &kp V	           &kp K         &kp H         &kp COMMA     &kp DOT       &hm SLASH QMARK 
             // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
-                                                           &hms 1 LGUI   &lt 2 RET         &kp SPACE     &kp RGUI 
+                                                           &lt 1 &skq LGUI  &lt 2 RET      &kp SPACE     &kp RGUI 
             //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
 		    >;
         };
