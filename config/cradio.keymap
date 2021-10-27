@@ -3,9 +3,6 @@
 #include <dt-bindings/zmk/bt.h>
 #include "cradio.h"
 
-&kscan0 {
-    debounce-period = <10>;
-};
 
 &mt {
     tapping-term-ms = <300>;
