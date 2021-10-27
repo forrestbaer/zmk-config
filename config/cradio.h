@@ -1,4 +1,4 @@
-#define XXX &trans
+#define XXX &none
 #define ___ &trans
 #define iHOMsel RG(RS(LEFT))
 #define iENDsel RG(RS(RIGHT))
@@ -7,3 +7,9 @@
 #define mtLeft RG(RS(TAB))
 #define ctRight LC(TAB)
 #define ctLeft LC(RS(TAB))
+#define rGra RG(GRAVE)
+#define rsGra RG(SH(GRAVE))
+#define reDo RG(RS(Z))
+#define unDo RG(Z)
+#define bT1 BT_SEL 1
+#define bT2 BT_SEL 2
