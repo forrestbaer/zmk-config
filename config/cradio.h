@@ -11,5 +11,5 @@
 #define rsGra RG(RS(GRAVE))
 #define reDo RG(RS(Z))
 #define unDo RG(Z)
-#define bT1 BT_SEL 1
-#define bT2 BT_SEL 2
+#define bT1 BT_SEL 0
+#define bT2 BT_SEL 1
