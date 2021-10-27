@@ -13,3 +13,4 @@
 #define unDo RG(Z)
 #define bT1 BT_SEL 0
 #define bT2 BT_SEL 1
+#define bT3 BT_SEL 2
