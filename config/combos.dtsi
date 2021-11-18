@@ -11,7 +11,7 @@ compatible = "zmk,combos";
 
 #define COMBO(NAME, BINDINGS, KEYPOS) \
   combo_##NAME { \
-    timeout-ms = <20>; \
+    timeout-ms = <10>; \
     bindings = <BINDINGS>; \
     key-positions = <KEYPOS>; \
   };
@@ -44,3 +44,4 @@ COMBO(greater_than, &kp GT, 26 27)
 COMBO(right_alt, &skq RALT, 27 28 29)
 COMBO(right_ctrl, &skq RCTRL, 27 28)
 COMBO(right_shift, &skq RSHFT, 28 29)
+COMBO(tog_audio, &tog AUDIO, 30 33)

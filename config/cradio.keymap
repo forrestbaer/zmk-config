@@ -3,6 +3,8 @@
 #include <dt-bindings/zmk/bt.h>
 #include "cradio.h"
 
+#define DEFAULT 0
+#define AUDIO   3
 
 &mt {
     tapping-term-ms = <300>;
@@ -62,27 +64,41 @@
         nav_layer {
             bindings = <
             // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-                 &kp ESC       &kp rGra      &kp rsGra     &kp C_VOL_UP  &kp RG(X)         &kp ctLeft    &kp ctRight   &kp PG_DN     &kp PG_UP     &kp DEL
+                 &kp ESC       &kp rGra      &kp rsGra     &kp RG(TAB)   &kp RG(X)         &kp ctLeft    &kp ctRight   &kp XXX       &kp PG_UP     &kp DEL
             // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-                 &kp C_PREV    &kp C_PP      &kp C_NEXT    &kp K_MUTE    &kp RG(C)         &kp RG(TAB)   &kp LEFT      &kp DOWN      &kp UP        &kp RIGHT
+                 &kp CAPS      &kp XXX       &kp XXX       &kp XXX       &kp RG(C)         &kp XXX       &kp LEFT      &kp DOWN      &kp UP        &kp RIGHT
             // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-                 &kp unDo      &kp reDo      &kp CAPS      &kp C_VOL_DN  &kp RG(V)         &kp iHOMsel   &kp iENDsel   &kp RG(DOWN)  &kp RG(UP)    &kp selAll 
+                 &kp unDo      &kp reDo      &kp XXX       &kp XXX       &kp RG(V)         &kp XXX       &kp iHOMsel   &kp XXX       &kp PG_DN     &kp iENDsel
             // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
                                                            &kp XXX       &skq LALT         &kp RG(LEFT)  &kp RG(RIGHT)
             //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
             >;
         };
         
-        num_layer {
+        num_layer 
             bindings = <
             // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-                 &kp F4        &kp F3        &kp F2        &kp F1        &bt bT1           &kp SLASH     &kp N7        &kp N8        &kp N9        &kp BSPC
+                 &kp F4        &kp F3        &kp F2        &kp F1        &bt XXX           &kp PLUS      &kp N7        &kp N8        &kp N9        &kp BSPC
             // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-                 &kp F8        &kp F7        &kp F6        &kp F5        &bt bT2           &kp PLUS      &kp N4        &kp N5        &kp N6        &kp STAR 
+                 &kp F8        &kp F7        &kp F6        &kp F5        &bt XXX           &kp MINUS     &kp N4        &kp N5        &kp N6        &kp STAR 
             // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-                 &kp F12       &kp F11       &kp F10       &kp F9        &bt bT3           &kp MINUS     &kp N1        &kp N2        &kp N3        &kp CARET
+                 &kp F12       &kp F11       &kp F10       &kp F9        &bt XXX           &kp SLASH     &kp N1        &kp N2        &kp N3        &kp CARET
             // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
-                                                           &kp XXX       &kp XXX           &kp N0        &kp DOT
+                                                           &kp LGUI      &kp XXX           &kp N0        &kp DOT
+            //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
+            >;
+        };   
+
+        audio_layer 
+            bindings = <
+            // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
+                 &kp XXX       &kp XXX       &kp XXX       &kp XXX       &kp C_VOL_UP      &kp XXX       &bt bT1       &bt bT2       &bt bT3       &kp XXX
+            // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
+                 &kp C_PREV    &kp C_STOP    &kp C_PP      &kp C_NEXT    &kp K_MUTE        &kp XXX       &kp XXX       &kp XXX       &kp XXX       &kp XXX 
+            // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
+                 &kp XXX       &kp XXX       &kp XXX       &kp XXX       &kp C_VOL_DN      &kp XXX       &kp XXX       &kp XXX       &kp XXX       &kp XXX
+            // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
+                                                           &kp XXX       &kp XXX           &kp XXX       &kp XXX
             //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
             >;
         };   
