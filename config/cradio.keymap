@@ -13,7 +13,7 @@
             compatible = "zmk,behavior-hold-tap";
             label = "HOLD_TAP";
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <150>;
             quick_tap_ms = <0>;
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
@@ -61,11 +61,11 @@
         nav_layer {
             bindings = <
             // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-                 &kp ESC       &kp rGra      &kp rsGra     &kp RG(TAB)   &kp RG(X)         &kp ctLeft    &kp ctRight   &kp XXX       &kp PG_UP     &kp DEL
+                 &kp ESC       &kp ctLeft    &kp ctRight   &kp RG(X)     &kp RG(TAB)       &kp XXX       &kp XXX       &kp XXX       &kp PG_UP     &kp DEL
             // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-                 &kp CAPS      &kp XXX       &kp XXX       &kp XXX       &kp RG(C)         &kp XXX       &kp LEFT      &kp DOWN      &kp UP        &kp RIGHT
+                 &kp CAPS      &kp rGra      &kp rsGra     &kp RG(C)     &kp XXX           &kp XXX       &kp LEFT      &kp DOWN      &kp UP        &kp RIGHT
             // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-                 &kp unDo      &kp reDo      &kp XXX       &kp XXX       &kp RG(V)         &kp XXX       &kp iHOMsel   &kp XXX       &kp PG_DN     &kp iENDsel
+                 &kp unDo      &kp reDo      &kp XXX       &kp RG(V)     &kp XXX           &kp iHOMsel   &kp iHOMsel   &kp XXX       &kp PG_DN     &kp iENDsel
             // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
                                                            &kp XXX       &skq LALT         &kp RG(LEFT)  &kp RG(RIGHT)
             //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
